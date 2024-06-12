@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Yara Shahidi</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: cursive; /* Arial, Helvetica, sans-serif; */
+            color: #f2f2f2;
+            background-color: #4d3a92;
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+
+        /* NAVBAR STYLING STARTS */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1em;
+            background-color: #4d3a92;
+            color: #fff;
+        }
+        .nav-links a {
+            color: #fff;
+        }
+        /* LOGO */
+        .logo {
+            font-size: 32px;
+        }
+
+        /* NAVBAR MENU */
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 18px;
+        }
+        .menu li:hover {
+            background-color: #614fa0;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        .menu li {
+            padding: 5px 14px;
+        }
+        /* RESPONSIVE NAVBAR MENU STARTS */
+
+        /* CHECKBOX HACK */
+
+        input[type=checkbox] {
+            display: none;
+        } 
+
+        /* HAMBURGER MENU */
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+
+        /* YARA FONT */
+        .stardos-stencil-regular {
+            font-family: "Stardos Stencil", system-ui;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .stardos-stencil-bold {
+            font-family: "Stardos Stencil", system-ui;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .top {
+            position: relative;
+        }
+
+        .banner {
+            margin: 0 10%;
+            float: left;
+            position: absolute;
+            top: 70%;
+        }
+
+        /* better things */
+
+
+        #yara {
+            font-family: Alegreya ;
+            font-size: 13em;
+            font-weight: 100;
+        }
+
+
+        /* ALBUM */
+        .spot{
+            margin-top: 10%;
+        }
+
+        .row {
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:row;
+            margin-top: 1%;
+        }
+        .col {
+            flex: 0 30%;
+            /* height:100px; */
+            /* border:0.1px solid rgb(244, 239, 239); */
+            margin-right: 3.3%;
+            box-sizing:border-box;
+        }
+
+
+        /* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color: #614fa0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color:#5d4c9b;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #5d4c9b;
+  }
+}
+
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO  -->
+        <div class="logo">YS &#10051;</div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <!-- <li><label class="logo">YS &#10051;</label></li> -->
+                <li><a href="/">Works</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+                <li><a href="/">Booking</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="top">
+        <div class="banner">
+            <h1 id="yara" >Yara Shahidi</h1>
+        </div>
+        <div class="stan">
+            <!-- <img src="https://hips.hearstapps.com/hmg-prod/images/elm090120yarashahidi010-logo-1594328516.jpg?resize=450:*" alt="Yara Shahidi" srcset=""> -->
+            <!-- <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/yara-shahidi-harper-(1)-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" alt=""> -->
+            <!-- <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/yara-shahidi-for-gla-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" alt="" width="50%" height="50%"> -->
+            <!-- <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/kiernan-shipka-and-y(2)-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" height="500" alt=""> -->
+            <img src="https://media.glamourmagazine.co.uk/photos/644295acbf0b24886c38eca7/16:9/w_2240,c_limit/YARA%20SHAHIDI%20210423%20GettyImages-1237649820_L.jpeg" alt="" width="100%">
+        </div>
+    </div>
+
+    <!-- <div id="imgContainer" style="
+         background-image: url('https://hips.hearstapps.com/hmg-prod/images/elm090120yarashahidi010-logo-1594328516.jpg?resize=450:*'); 
+         background-repeat: no-repeat; 
+         background-size: auto; 
+         -webkit-background-size: auto; 
+         -mox-background-size: auto; 
+         -o-background-size: auto;">
+  <div id="theTag">BLAH BLAH BLAH</div> -->
+</div>
+    <div class="spot">
+        
+        <div class="row">
+            <div class="col carter">
+                <!-- https://www.facebook.com/photo/?fbid=811489074349577&set=pb.100064654752675.-2207520000&locale=es_LA -->
+                <img src="https://scontent.fnbo15-1.fna.fbcdn.net/v/t39.30808-6/423236840_18391554910077708_4640940842900233757_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0UsKbYJqHlJYtGGuZ2VfghAnc793Q2FqECdzv3dDYWgloSGZTYNH_NYbQ8i7ZWWFgeS1AUe2cTnCQo3DC07QO&_nc_ohc=Vm1StrRvWB4Q7kNvgHUjH66&_nc_ht=scontent.fnbo15-1.fna&oh=00_AYA2X2AGj7NxXH-ewgSCthybyN13hmS7SZ5uKavjHizS1Q&oe=666E5A10" alt="" width="100%">
+            </div>
+            <div class="col sibwc">
+                <!--  -->
+                <img src="https://theplace-2.com/storage/instagram/yara_shahidi/449800.jpg" alt="" width="100%">
+            </div>
+            <div class="col hearts">
+                <!-- https://theplace-2.com/instagram/yara-shahidi-id6667/ -->
+                <img src="https://theplace-2.com/storage/instagram/yara_shahidi/459109.jpg" alt="" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col yoy">
+                <img src="https://theplace-2.com/storage/instagram/yara_shahidi/438953.jpg" alt="" width="100%">
+            </div>
+            <div class="col porter">
+                <img src="https://theplace-2.com/storage/instagram/yara_shahidi/434014.jpg" alt="" width="100%">
+            </div>
+            <div class="col zaar">
+                <img src="https://www.bellanaija.com/wp-content/uploads/2018/05/32621504_2141950162488536_1790540761549242368_n.jpg" alt="" width="100%">
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col pretty">
+                <img src="https://theplace-2.com/storage/instagram/yara_shahidi/432624.jpg" alt="" width="100%">
+            </div>
+            <div class="col">
+                <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/yara-shahidi-in-elle-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" alt="" width="100%">
+                <!-- <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/yara-shahidi-in-elle-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" alt="" width="100%"> -->
+            </div>
+            <div class="col red">
+                <img src="https://theplace-2.com/cache/archive/yara_shahidi/img/yara-shahidi-for-dio-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg" alt="" width="100%">
+            </div>
+            
+        </div>
+    </div>
+    <div class="awards"></div>
+    <div class="about"></div>
+    <div class="footer"></div>
+    
+</body>
+</html>
+
+                <!--   
+                </div>
+                <div>
+                   
+                </div> -->
