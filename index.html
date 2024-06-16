@@ -21,6 +21,7 @@
         }
         body {
             margin: 0;
+            width: 100%;
             font-family: cursive; /* Arial, Helvetica, sans-serif; */
             color: #f2f2f2;
             background-color: #4d3a92;
@@ -93,6 +94,7 @@
 
         .top {
             position: relative;
+            max-width: 100%;
         }
 
         .banner {
@@ -107,7 +109,7 @@
 
         #yara {
             font-family: Alegreya ;
-            font-size: 13em;
+            font-size: 13em;  
             font-weight: 100;
         }
 
@@ -129,6 +131,42 @@
             /* border:0.1px solid rgb(244, 239, 239); */
             margin-right: 3.3%;
             box-sizing:border-box;
+        }
+
+        .col-a {
+            flex: 0 60%;
+            /* height:100px; */
+            /* border:0.1px solid rgb(244, 239, 239); */
+            box-sizing:border-box;
+        }
+
+        .col-aa {
+            flex: 0 30%;
+            margin-left: 5%;
+            /* height:100px; */
+            /* border:0.1px solid rgb(244, 239, 239); */
+            box-sizing:border-box;
+        }
+
+        .awards {
+            font-family: "Trebuchet MS", system-ui;
+            font-size: 1.5rem;
+            font-weight: 10;
+            margin-top: 6%;
+        }
+
+        .awards-list li {
+            padding: 4%;
+            border-top: 0.1px solid rgb(244, 239, 239);
+        }
+
+        .meta{
+            font-size: small;
+        }
+
+        .awards-head {
+            margin-top: 1%;
+            font-weight: 500;
         }
 
 
@@ -226,6 +264,7 @@
             <div class="col carter">
                 <!-- https://www.facebook.com/photo/?fbid=811489074349577&set=pb.100064654752675.-2207520000&locale=es_LA -->
                 <img src="https://scontent.fnbo15-1.fna.fbcdn.net/v/t39.30808-6/423236840_18391554910077708_4640940842900233757_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0UsKbYJqHlJYtGGuZ2VfghAnc793Q2FqECdzv3dDYWgloSGZTYNH_NYbQ8i7ZWWFgeS1AUe2cTnCQo3DC07QO&_nc_ohc=Vm1StrRvWB4Q7kNvgHUjH66&_nc_ht=scontent.fnbo15-1.fna&oh=00_AYA2X2AGj7NxXH-ewgSCthybyN13hmS7SZ5uKavjHizS1Q&oe=666E5A10" alt="" width="100%">
+                <caption> 2024</caption>
             </div>
             <div class="col sibwc">
                 <!--  -->
@@ -264,8 +303,26 @@
             
         </div>
     </div>
-    <div class="awards"></div>
-    <div class="about"></div>
+    <div class="awards">
+        <div class="row">
+            <div class="col-aa">
+                <p class="awards-head">
+                    AWARDS
+                </p>
+            </div>
+            <div class="col-a">
+                <ul class="awards-list">
+                    <li>New Gen Gamechanger &emsp; <span class="meta">2021</span></li>
+                    <li>Glamour Award for The New Voice  &emsp;  <span class="meta">New York / 2019</span>         </li>
+                    <li>BET YoungStars Award   &emsp;  <span class="meta">Los Angeles, California      / 2018 & 2017</span>          </li>
+                    <li>Black Reel Awards &emsp; <span class="meta">2017</span> </li>
+                    <li>Gracie Award &emsp; <span class="meta">Beverly Hills  / 2016</span> </li>
+                    <li style="border-bottom: 0.1px solid rgb(244, 239, 239);">NAACP Image Award  &emsp; <span class="meta">Philadelphia, Pennsylvania / 2015</span> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about">POTATOES</div>
     <div class="footer"></div>
     
 </body>
